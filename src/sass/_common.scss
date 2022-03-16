@@ -1,0 +1,53 @@
+/* color */
+$color-main: #D41443;
+$color-second: #FFA5BA;
+$color-text: #ffffff;
+
+$font-titan: "Titan One", cursive;
+$font-sans: 'DM Sans', sans-serif;
+
+$font-main: 16px;
+
+
+
+body {
+  color: $color-main;
+  font-family: $font-titan;
+  font-size: $font-main;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  // transition: color $animation;
+  // color: inherit;
+
+  &:hover,
+  &:focus {
+    color: $color-main;
+  }
+}
