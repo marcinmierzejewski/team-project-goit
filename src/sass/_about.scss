@@ -1,8 +1,17 @@
+@import './common';
+
 .about{
+    padding-top: 125px;
     background-color: $color-background-about;
 }
 
 .paragraph{
     color: $color-second;
+    margin-bottom: 15px;
+    text-transform: uppercase;    
+}
 
+.secondary-header{
+    text-transform: uppercase;
+    font-size: $font-h2;
 }
