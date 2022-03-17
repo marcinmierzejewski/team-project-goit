@@ -8,10 +8,23 @@
 .paragraph{
     color: $color-second;
     margin-bottom: 15px;
-    text-transform: uppercase;    
+    text-transform: uppercase; 
+    font-style: normal;
+    font-weight: $light;
+    font-size: $font-paragraph;
+    line-height: 1.167;
+    text-align: center;
+    letter-spacing: 0.04em; 
 }
 
 .secondary-header{
     text-transform: uppercase;
     font-size: $font-h2;
+    font-style: normal;
+    font-weight: $light;
+    font-size: 34px;
+line-height: 39px;
+text-align: center;
+letter-spacing: 0.04em;
+text-transform: uppercase;
 }
