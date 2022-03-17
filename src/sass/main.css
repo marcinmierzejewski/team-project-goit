@@ -99,6 +99,8 @@ li {
     border-radius: 30px;
     background-color: #ffffff;
     margin-bottom: 20px;
+    -webkit-box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+            box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   }
   .contacts__cafe {
     width: 80px;
@@ -108,7 +110,7 @@ li {
     background-color: #f0d1a5;
     color: #ffffff;
     font-size: 12px;
-    font-family: 'DM Sans';
+    font-family: "DM Sans", sans-serif;
     font-weight: 500;
     font-style: normal;
     line-height: 1.395;
@@ -123,7 +125,7 @@ li {
     background-color: #c2e297;
     color: #ffffff;
     font-size: 12px;
-    font-family: 'DM Sans';
+    font-family: "DM Sans", sans-serif;
     font-weight: 500;
     font-style: normal;
     line-height: 1.395;
@@ -146,7 +148,7 @@ li {
   .contacts__address-paragraf {
     color: #000000;
     font-size: 12px;
-    font-family: 'DM Sans';
+    font-family: "DM Sans", sans-serif;
     font-weight: 500;
     font-style: normal;
     line-height: 1.395;
@@ -164,7 +166,7 @@ li {
     line-height: 22px;
     letter-spacing: 0em;
     text-align: left;
-    color: #ffa5ba;
+    color: #FFA5BA;
   }
   .contacts__open-time-paragraf {
     font-family: DM Sans;
@@ -230,7 +232,7 @@ li {
     letter-spacing: 0em;
     text-align: center;
     color: #ffffff;
-    background-color: #d41342;
+    background-color: #D41443;
     width: 161px;
     height: 44px;
     border: none;
@@ -247,7 +249,7 @@ li {
     line-height: 21px;
     letter-spacing: 0em;
     text-align: center;
-    color: #d41443;
+    color: #D41443;
     background-color: #ffffff;
     width: 161px;
     height: 44px;
