@@ -2,4 +2,21 @@
   padding-top: 121px;
   padding-bottom: 98px;
   text-align: center;
+
+  &_hero-header {
+    padding-top: 0;
+    overflow: hidden;
+  
+    &::after {
+      content: "";
+      height: 344px;
+      width: 346px;
+      position: absolute;
+      top: 83px;
+      left: 16px;
+      border-radius: 50%;
+      background-color: $color-second;
+      z-index: 0;
+    }
+  }
 }

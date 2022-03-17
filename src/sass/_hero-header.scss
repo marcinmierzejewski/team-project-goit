@@ -1,0 +1,124 @@
+.hero-header {
+  padding-top: 6px;
+  position: relative;
+  z-index: 1;
+}
+
+.mobile-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.burger-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0; 
+  fill: $color-main; 
+
+  &:hover {
+    fill: $color-second;
+  }
+
+  &__icon {
+    width: 20px;
+    height: 12px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .burger-btn {
+    display: none;
+  }
+} 
+
+.hero-title {
+  font-size: 26px;
+  line-height: 1.1538;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding-top: 137px;
+  padding-bottom: 19px;
+  max-width: 218px;
+  text-align: left;
+  z-index: 2;
+
+  &_accent {
+    font-size: 48px;
+  line-height: 46px;
+  text-transform: uppercase;
+  color: $color-main;
+  }
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 160px;
+}
+
+.hero-btn {
+  font-family: 'DM Sans';
+  font-size: 8px;
+  line-height: 10px;
+  border: none;
+  border-radius: 20px;
+  color: #FFFFFF;
+  padding: 7px 15px 7px 13px;
+
+  &:first-child {
+    margin-right: 8px;
+  }
+
+  &_red {
+    background-color: $color-main;
+  }
+
+  &_white {
+    color: $color-main;
+  }
+}
+
+.hero-img {
+  position: absolute;
+  bottom: 0;
+  right: 12px;
+  z-index: -1;
+}
+
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99;
+  background-color: grey;
+  // transition: visibility $animation, opacity $animation;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  // transition: transform $animation, visibility $animation, opacity $animation;
+}
+
+.mobile {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  margin: 0 auto;
+  background-color: red;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  // transition: transform $animation;
+
+  .is-hidden & {
+    transform: translate(-50%, -50%) scale(0);
+  }
+}

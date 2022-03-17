@@ -1,14 +1,56 @@
 <section class="section section_hero-header">
   <div class="container container_hero-header">
-    
-    <div>
-      <img src="images/hero-header/main-logo.svg" alt="main logo">
+    <div class="hero-header">
+      <nav class="mobile-nav">
+        <a class="mobile-nav__logo" href="#">
+          <img src="images/hero-header/main-logo.svg" alt="main logo">
+        </a>
+        <button class="burger-btn" data-menu-open>
+          <svg class="burger-btn__icon" width="20" height="12">
+              <use href="images/hero-header/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </nav>
+      
+      <div class="hero-title">
+        ice cream made with <span class="hero-title_accent">passion</span>
+      </div>
+      <div class="btn-wrapper">
+        <button class="hero-btn hero-btn_red" type="button">Products</button>
+        <button class="hero-btn hero-btn_white" type="button">How it’s made?</button>
+      </div>
+
+      <picture class="hero-img">
+        <source media="(min-width: 1200px)"
+        srcset="./images/hero-header/ice-mobile.png 1x, ./images/hero-header/ice-mobile@2x.png 2x">
+
+        <source media="(min-width: 768px)"
+        srcset="./images/hero-header/ice-mobile.png 1x, ./images/hero-header/ice-mobile@2x.png 2x">
+
+        <source media="(min-width: 320px)"
+        srcset="./images/hero-header/ice-mobile.png 1x, ./images/hero-header/ice-mobile@2x.png 2x">
+
+        <img src="./images/hero-header/ice-mobile.png" alt="Picture of John Doe - Frontend Developer"/>
+    </picture>
+
+    <div class="backdrop is-hidden" data-menu>
+      <div class="mobile">
+        <div class="mobile__wrapper">
+          
+        </div>
+        <button type="button" class="mobile__close-btn" data-menu-close>
+          <svg width="14" height="14">
+            <use href="images/hero-header/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
     </div>
-    <div>
-      ice cream made with passion
+
+
+
+
+
     </div>
-    <button type="button">Products</button>
-    <button type="button">How it’s made?</button>
 
 
   </div>
