@@ -1,0 +1,13 @@
+@media screen and (max-width: 768px) {
+  .contacts__header {
+    display: none;
+  }
+
+  .contacts__paragraf {
+    max-width: 60px;
+    max-height: 16px;
+    background-color: #f0d1a5;
+    color: #ffffff;
+    font-size: 12px;
+  }
+}
