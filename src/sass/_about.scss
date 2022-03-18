@@ -1,7 +1,7 @@
 @import './common';
 
-@media (min-width: 320px) {
-  .container_about {
+@media (max-width: 768px) {
+  .section_about {
     background-color: $color-background-about;
   }
 
