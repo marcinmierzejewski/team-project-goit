@@ -2,6 +2,19 @@
   padding-top: 6px;
   position: relative;
   z-index: 1;
+  overflow: hidden;
+  
+    &::after {
+      content: "";
+      height: 344px;
+      width: 346px;
+      position: absolute;
+      top: 83px;
+      left: 16px;
+      border-radius: 50%;
+      background-color: $color-second;
+      z-index: -2;
+    }
 }
 
 .mobile-nav {
@@ -14,7 +27,8 @@
   background-color: transparent;
   border: none;
   padding: 0;
-  line-height: 0; 
+  line-height: 0;
+  padding-right: 20px; 
   fill: $color-main; 
 
   &:hover {
@@ -84,7 +98,7 @@
 .hero-img {
   position: absolute;
   bottom: 0;
-  right: 12px;
+  right: 32px;
   z-index: -1;
 }
 
@@ -95,30 +109,51 @@
   width: 100vw;
   height: 100vh;
   z-index: 99;
-  background-color: grey;
-  // transition: visibility $animation, opacity $animation;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: visibility 250ms linear, opacity 250ms linear;
 }
 
 .is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  // transition: transform $animation, visibility $animation, opacity $animation;
 }
 
 .mobile {
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%) scale(1);
+  right: 0;
+  top: 0;
+  width: 250px;
+  height: 100vh;
+  transform: translateX(0);
   margin: 0 auto;
-  background-color: red;
+  background-color: #E17992;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  // transition: transform $animation;
+  transition: transform 250ms linear;
 
   .is-hidden & {
-    transform: translate(-50%, -50%) scale(0);
+    transform: translateX(100%);
+  }
+
+  &__close-btn {
+    position: absolute;
+    top: 23px;
+    right: 34px;
+    background-color: transparent;
+    border: none;
+    fill: $color-text;
+
+    &:hover,
+    &:focus {
+      fill: $color-main;
+    }
+  }
+
+  &__wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 60px;
   }
 }
