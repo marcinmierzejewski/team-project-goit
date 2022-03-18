@@ -1,6 +1,6 @@
-@import './common';
 
-@media (max-width: 768px) {
+
+
   .section_about {
     background-color: $color-background-about;
     background-image: url(../images/milk_background.png);
@@ -86,4 +86,4 @@
     display: flex;
     gap: 13px;
   }
-}
+
