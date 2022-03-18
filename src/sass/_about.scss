@@ -6,7 +6,6 @@
   }
 
   .about {
-    padding-top: 125px;
 
     &__right-side {
       margin-left: 30px;
@@ -33,6 +32,10 @@
       line-height: 1.583;
       text-align: left;
       margin-bottom: 47px;
+    }
+    &__icon{
+     width: 5px;
+      height: 8px;
     }
   }
 
@@ -65,7 +68,6 @@
     background: $color-text;
     border-radius: 22px;
     border: 0;
-    display: block;
 
     color: $color-main;
     font-family: $font-sans;
@@ -74,6 +76,8 @@
     font-size: $font-size14;
     line-height: 1.286;
     align-items: center;
-    text-align: center;
+    justify-content: center;
+    display: flex;
+    gap: 13px;
   }
 }
