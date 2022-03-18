@@ -1,0 +1,19 @@
+@media screen and (max-width: 768px) {
+    .section_customer {
+        background-image: linear-gradient(to bottom, #fafafa 13%, #fff5f6 13%, #fff5f6 100%);
+      }
+
+    .customer__header {
+        display: none;
+    }
+
+    .customer {
+        min-height: 280px;
+        padding-left: 50px;
+        padding-right: 50px;
+        background-color: #FAFAFA;
+        margin-bottom: 20px;
+    }
+
+}
+    
