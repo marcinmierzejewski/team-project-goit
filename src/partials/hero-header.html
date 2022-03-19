@@ -32,6 +32,25 @@
           <p class="hero__paragraf">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et
+            <picture class="hero__arrow">
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./images/hero-header/arrow-desktop.png    1x,
+                  ./images/hero-header/arrow-desktop@2x.png 2x
+                "
+              />
+      
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/hero-header/arrow-tablet.png    1x,
+                  ./images/hero-header/arrow-tablet@2x.png 2x
+                "
+              />
+      
+              <img src="./images/hero-header/arrow-tablet.png" alt="arrow" />
+            </picture>            
           </p>
         </div>
         <div class="hero__right">
@@ -68,6 +87,46 @@
         />
 
         <img src="./images/hero-header/ice-mobile.png" alt="ice" />
+      </picture>
+
+      <picture class="girl-img">
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./images/hero-header/girl-desktop.png    1x,
+            ./images/hero-header/girl-desktop@2x.png 2x
+          "
+        />
+
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/hero-header/girl-tablet.png    1x,
+            ./images/hero-header/girl-tablet@2x.png 2x
+          "
+        />
+
+        <img src="./images/hero-header/girl-tablet.png" alt="girl" />
+      </picture>
+
+      <picture class="milk-img">
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./images/hero-header/milk-desktop.png    1x,
+            ./images/hero-header/milk-desktop@2x.png 2x
+          "
+        />
+
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/hero-header/milk-tablet.png    1x,
+            ./images/hero-header/milk-tablet@2x.png 2x
+          "
+        />
+
+        <img src="./images/hero-header/milk-tablet.png" alt="milk" />
       </picture>
 
       <div class="backdrop is-hidden" data-menu>

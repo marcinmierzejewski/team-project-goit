@@ -45,11 +45,9 @@
   display: flex;
   justify-content: space-between;
 
-  &__right {
-    display: none;
-  }
-
-  &__paragraf {
+  &__right,
+  &__paragraf,
+  &__arrow  {
     display: none;
   }
 }
@@ -75,11 +73,6 @@
     }
 }
 
-@media screen and (min-width: 1280px) {
-  .burger-btn {
-    display: none;
-  }
-} 
 
 .hero-title {
   font-size: 26px;
@@ -135,6 +128,11 @@
   bottom: 0;
   right: 32px;
   z-index: -1;
+}
+
+.girl-img,
+.milk-img {
+  display: none;
 }
 
 .backdrop {
@@ -300,7 +298,16 @@
       color: $color-text;
       text-align: left;
       margin-bottom: 59px;
-      margin-left: 154px;
+      margin-left: 120px;
+      position: relative;
+    }
+
+    &__arrow {
+      display: block;
+      position: absolute;
+      bottom: -25px;
+      left: 0;
+
     }
   }
 
@@ -340,6 +347,20 @@
     right: 213px;
   }
 
+  .girl-img {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .milk-img {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 28px;
+  }
+
   .btn-wrapper {
     padding-bottom: 60px;
   }
@@ -355,4 +376,9 @@
     padding-top: 84px;
     max-width: 277px;
   }
+
+  .burger-btn {
+    display: none;
+  }
 }
+
