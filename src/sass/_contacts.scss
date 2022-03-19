@@ -10,6 +10,7 @@ li {
 }
 .contacts {
   min-width: 220px;
+  width: 220px;
   padding: 43px 20px;
   border-radius: 30px;
   background-color: $color-text;
@@ -164,4 +165,120 @@ li {
   border: none;
   border-radius: 22px;
   cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-div {
+    display: flex;
+    justify-content: center;
+  }
+  .contacts:not(:last-child) {
+    margin-right: 20px;
+  }
+  .section_contacts {
+    background-image: linear-gradient(to bottom, #fafafa 23%, #fff5f6 23%, #fff5f6 100%);
+  }
+  .btn-contacts {
+    display: flex;
+    flex-direction: inherit;
+    justify-content: center;
+  }
+  .btn-contacts__our-locations {
+    margin-top: 81px;
+    margin-bottom: 0;
+    margin-right: 14.5px;
+    width: 191.45px;
+  }
+  .btn-contacts__franchise {
+    margin-top: 81px;
+    width: 174.05px;
+  }
+  .contacts__cafe {
+    width: 73px;
+    height: 28px;
+    font-size: 16px;
+    line-height: 1.86;
+  }
+  .contacts__foodtruck {
+    width: 138px;
+    height: 28px;
+    font-size: 16px;
+    line-height: 1.86;
+  }
+  .contacts__address-paragraf {
+    font-size: 14px;
+    line-height: 1.628;
+  }
+  .contacts__address {
+    font-size: 14px;
+    line-height: 1.628;
+  }
+  .contacts__open-time-paragraf {
+    font-size: 14px;
+    line-height: 1.628;
+  }
+  .contacts__open-time {
+    font-size: 14px;
+    line-height: 1.628;
+  }
+  .contacts__tel {
+    font-size: 14px;
+    line-height: 1.628;
+  }
+  .contacts__mail {
+    font-size: 14px;
+    line-height: 1.628;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .section_contacts {
+    background-image: url('/images/section-contacts-bg.svg'),
+      linear-gradient(to bottom, #fafafa 23%, #fff5f6 23%, #fff5f6 100%);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .contacts {
+    width: 330px;
+  }
+  .contacts:not(:last-child) {
+    margin-right: 31px;
+  }
+  .btn-contacts__our-locations {
+    margin-top: 86px;
+    margin-right: 15px;
+    width: 198px;
+  }
+  .btn-contacts__franchise {
+    margin-top: 86px;
+    width: 180px;
+  }
+  .contacts__address-paragraf {
+    font-size: 16px;
+    line-height: 1.86;
+  }
+  .contacts__address {
+    font-size: 16px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+  }
+  .contacts__open-time-paragraf {
+    font-size: 16px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+  }
+  .contacts__open-time {
+    font-size: 16px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+  }
+  .contacts__tel {
+    font-size: 16px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+  }
+  .contacts__mail {
+    font-size: 16px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+  }
 }
