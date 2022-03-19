@@ -2,7 +2,18 @@
   width: 320px;
   padding: 0 20px;
   margin: 0 auto;
+
+  &_hero-header {
+    background-color: #FFB8CA;
+    padding-right: 0;
+  }
  
+}
+
+.container-products {
+  width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -19,3 +30,8 @@
     padding: 0 112px;
   }
 }
+    padding: 0 115px;
+  }
+}
+
+
