@@ -1,23 +1,24 @@
 <section class="section section_about">
   <div class="container container_about">
     <div class="about">
-      <p class="paragraph">tradition and love</p>
+      <p class="about__paragraph">tradition and love</p>
       <h2 class="secondary-header">how it’s made?</h2>
+      <div class="about__side">
       <div class="about__left-side">
         <picture>
-          <!-- <source srcset="
-							images/cow_desktop.png    1x,
-							images/cow_desktop@2x.png 2x
-						" media="(min-width: 1200px)">
-          <source srcset="
-							images/cow_tablet.png    1x,
-							images/cow_tablet@2x.png 2x
-						" media="(min-width: 768px)">
-					<source srcset="
-							images/cow_mobile.png    1x,
-							images/cow_mobile@x.png 2x
-						" media="(min-width: 320px)"> -->
-					<img class="about__left-side-img" src="./images/cow_mobile.png" alt="COW">
+          <source
+            media="(min-width: 320px)"
+            srcset="./images/cow_mobile.png 1x, ./images/cow_mobile@2x.png 2x"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="./images/cow_tablet.png 1x, ./images/cow_tablet@2x.png 2x"
+          />
+          <source
+            media="(min-width: 1200px)"
+            srcset="./images/cow_desktop.png 1x, ./images/cow_desktop@2x.png 2x"
+          />
+          <img class="about__left-side-img" src="images/cow_tablet.png" alt="COW">
         </picture>        
       </div>       
       <div class="about__right-side">
@@ -39,6 +40,7 @@
             <use href="./images/sprite_about.svg#icon-Vector-1"></use>
           </svg>
         </button>
+</div>
       </div>
     </div>
   </div>
