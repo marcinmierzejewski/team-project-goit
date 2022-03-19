@@ -5,6 +5,15 @@
   font-size: 18px;
   line-height: 21px;
   color: $color-second;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: 34px;
+  }
 }
 
 .products-title {
@@ -14,22 +23,39 @@
   letter-spacing: 0.04em;
   color: $color-main;
   padding-bottom: 31px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 55px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+    line-height: 66px;
+  }
 }
 
 .product-list {
   list-style: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .product-list__space {
   padding-top: 140px;
+
+  @media screen and (min-width: 768px) {
+    position: relative;
+    margin-right: 20px;
+  }
 }
 
 .product-list__photo {
-  position:absolute;
+  position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 
 .product-list__item {
   border-radius: 24px;
@@ -43,11 +69,25 @@
   text-align: center;
   letter-spacing: 0.04em;
   color: $color-text;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: 34px;
+  }
 }
 
 .dots {
   padding-top: 30px;
   padding-bottom: 30px;
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 32px;
+  }
 }
 
 .product-list__information {
@@ -60,6 +100,18 @@
   color: $color-text;
   padding-left: 41px;
   padding-right: 39px;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 11px;
+    padding-right: 11px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 176%;
+    padding-left: 44px;
+    padding-right: 44px;
+  }
 }
 
 .product-list__icon {
