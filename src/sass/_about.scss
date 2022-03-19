@@ -15,7 +15,6 @@
     font-size: $font-size18;
     line-height: 1.167;
     text-align: center;
-    letter-spacing: $letter04;
   }
 
   &__description-first {
@@ -60,8 +59,8 @@
   font-size: $font-h2;
   line-height: 1.147;
   text-align: center;
-  letter-spacing: $letter04;
   text-transform: uppercase;
+  letter-spacing: $letter04;
 }
 
 .modal-btn {
@@ -81,6 +80,7 @@
   justify-content: center;
   display: flex;
   gap: 13px;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -91,10 +91,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .container__about {
-    margin: 0;
-  }
-
   .about {
     &__side {
       display: flex;
@@ -102,6 +98,8 @@
 
     &__paragraph {
       padding-top: 9px;
+      font-size: $font-size26;
+      line-height: 1.154;
     }
 
     &__left-side-img {
@@ -111,7 +109,6 @@
 
     &__right-side {
       margin-left: 17px;
-      margin-right: 17px;
     }
 
     &__description-first {
@@ -119,16 +116,76 @@
       height: 79px;
       font-size: $font-size14;
       line-height: 1.786;
+      margin-bottom: 49px;
     }
 
     &__description-secondary {
       font-size: $font-size14;
       line-height: 1.786;
       margin-bottom: 62px;
+      letter-spacing: $letter04;
+      
     }
   }
 
   .secondary-header {
     padding-bottom: 50px;
+    font-size: $font-size48;
+    line-height: 1.146;
+  }
+
+  .modal-btn {
+    font-size: $font-main;
+    line-height: 1.313;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  
+  .about {
+    &__paragraph {
+      padding-top: 4px;
+      font-size: $font-size30;
+      line-height: 1.133;
+      letter-spacing: $letter04;
+    }
+
+    &__side {
+      display: flex;
+    }
+
+    &__left-side-img {
+      width: 516px;
+      height: 516px;
+    }
+
+    &__right-side {
+      margin-left: 74px;
+     
+    }
+
+    &__description-first {
+      width: 463px;
+height: 79px;
+      font-size: $font-main;
+line-height: 1.75;
+margin-bottom: 35px;
+letter-spacing: $letter04;
+    }
+
+    &__description-secondary {
+      font-size: $font-size14;
+      line-height: 1.929;
+      margin-bottom: 45px;
+    }
+  }
+
+  .secondary-header {
+    padding-bottom: 55px;
+    letter-spacing: $letter06;
+  }
+
+  .modal-btn:hover{
+    background-color: red;
   }
 }
