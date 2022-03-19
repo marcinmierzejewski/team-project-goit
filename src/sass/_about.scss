@@ -124,7 +124,6 @@
       line-height: 1.786;
       margin-bottom: 62px;
       letter-spacing: $letter04;
-      
     }
   }
 
@@ -141,7 +140,6 @@
 }
 
 @media screen and (min-width: 1280px) {
-  
   .about {
     &__paragraph {
       padding-top: 4px;
@@ -161,16 +159,15 @@
 
     &__right-side {
       margin-left: 74px;
-     
     }
 
     &__description-first {
       width: 463px;
-height: 79px;
+      height: 79px;
       font-size: $font-main;
-line-height: 1.75;
-margin-bottom: 35px;
-letter-spacing: $letter04;
+      line-height: 1.75;
+      margin-bottom: 35px;
+      letter-spacing: $letter04;
     }
 
     &__description-secondary {
@@ -185,7 +182,7 @@ letter-spacing: $letter04;
     letter-spacing: $letter06;
   }
 
-  .modal-btn:hover{
+  .modal-btn:hover {
     background-color: $hover;
   }
 }
