@@ -35,7 +35,8 @@
   padding-right: 20px; 
   fill: $color-main; 
 
-  &:hover {
+  &:hover,
+  &:focus {
     fill: $color-second;
   }
 
@@ -69,6 +70,8 @@
     width: 160px;
     height: 44px;
     margin-bottom: 19px;
+    cursor: pointer;
+    transition: background-color 250ms linear;
 
     &:hover,
     &:focus {
@@ -114,6 +117,8 @@
   border-radius: 20px;
   color: #FFFFFF;
   padding: 7px 15px 7px 13px;
+  cursor: pointer;
+  transition: background-color 250ms linear;
 
   &:first-child {
     margin-right: 8px;
