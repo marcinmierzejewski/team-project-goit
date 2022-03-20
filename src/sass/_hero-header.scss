@@ -70,6 +70,11 @@
     height: 44px;
     margin-bottom: 19px;
 
+    &:hover,
+    &:focus {
+      background-color: #ECEBEB;
+    }
+
     &__icon {
       margin-left: 10px;
     }
@@ -116,11 +121,21 @@
 
   &_red {
     background-color: $color-main;
+
+    &:hover,
+    &:focus {
+      background-color: #C7133E;
+    }
   }
 
   &_white {
     color: $color-main;
     background-color: $color-text;
+
+    &:hover,
+    &:focus {
+      background-color: #ECEBEB;
+    }
   }
 }
 
