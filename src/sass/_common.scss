@@ -64,8 +64,7 @@ figure {
 
 .link {
   text-decoration: none;
-  // transition: color $animation;
-  // color: inherit;
+  transition: color 250ms linear;
 
   &:hover,
   &:focus {
