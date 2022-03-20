@@ -194,7 +194,8 @@
     letter-spacing: $letter06;
   }
 
-  .modal-btn:hover {
+  .modal-btn:hover,
+   .modal-btn:focus{
     background-color: $hover;
   }
 }

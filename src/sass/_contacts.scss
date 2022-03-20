@@ -248,14 +248,16 @@ li {
     margin-top: 86px;
     margin-right: 15px;
     width: 198px;
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: $customer-dot;
     }
   }
   .btn-contacts__franchise {
     margin-top: 86px;
     width: 180px;
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: $hover;
     }
   }
@@ -288,7 +290,8 @@ li {
     line-height: 1.86;
     letter-spacing: 0.04em;
   }
-  .footer-socialmedia__div:hover {
+  .footer-socialmedia__div:hover,
+  .footer-socialmedia__div:focus {
     background-color: $color-main;
   }
 }
