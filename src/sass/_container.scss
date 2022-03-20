@@ -28,7 +28,10 @@
   .container {
     width: 1280px;
     padding: 0 115px;
-  }
+    &_hero-header {
+      padding: 0;
+    }
+  } 
 }
 
 
