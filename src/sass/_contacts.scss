@@ -3,7 +3,7 @@ li {
 }
 
 .section_contacts {
-  background-image: linear-gradient(to bottom, #fafafa 13%, #fff5f6 13%, #fff5f6 100%);
+  background-image: linear-gradient(to bottom, #ffffff 13%, #fff5f6 13%, #fff5f6 100%);
 }
 .contacts__header {
   display: none;
@@ -177,7 +177,7 @@ li {
     margin-right: 20px;
   }
   .section_contacts {
-    background-image: linear-gradient(to bottom, #fafafa 23%, #fff5f6 23%, #fff5f6 100%);
+    background-image: linear-gradient(to bottom, #ffffff 23%, #fff5f6 23%, #fff5f6 100%);
   }
   .btn-contacts {
     display: flex;
@@ -234,7 +234,7 @@ li {
 @media screen and (min-width: 1280px) {
   .section_contacts {
     background-image: url('/images/section-contacts-bg.svg'),
-      linear-gradient(to bottom, #fafafa 23%, #fff5f6 23%, #fff5f6 100%);
+      linear-gradient(to bottom, #ffffff 23%, #fff5f6 23%, #fff5f6 100%);
     background-repeat: no-repeat;
     background-position: center;
   }
