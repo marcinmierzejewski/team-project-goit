@@ -39,12 +39,18 @@
     line-height: 255%;
     color: $black;
     width: 157px;
-    height: 239px;
+    height: 245px;
     z-index: 3;
     position: relative;
-    display: inline;
-    border-bottom: 1px solid #e1e1e1;
+    display: block;
     padding-bottom: 6px;
+
+    background-image: repeating-linear-gradient(
+      hsla(0, 0%, 100%, 0),
+      hsla(0, 0%, 100%, 0) 29px,
+      #e1e1e1 0,
+      #e1e1e1 30px
+    );
   }
 
   .customer__secondary-text {
@@ -107,6 +113,15 @@
   .customer__main-text {
     font-size: $font-size14;
     line-height: 216%;
+
+    background-image: repeating-linear-gradient(
+      hsla(0, 0%, 100%, 0),
+      hsla(0, 0%, 100%, 0) 29px,
+      #e1e1e1 0,
+      #e1e1e1 30px
+    );
+    display: table-footer-group;
+    height: 50px;
   }
   .customer__secondary-text {
     margin-top: 14px;
@@ -129,6 +144,14 @@
   .customer__main-text {
     font-size: $font-main;
     line-height: 186%;
+
+    background-image: repeating-linear-gradient(
+      hsla(0, 0%, 100%, 0),
+      hsla(0, 0%, 100%, 0) 29px,
+      #e1e1e1 0,
+      #e1e1e1 30px
+    );
+    height: 80px;
   }
   .customer__pic {
     margin-top: 300px;
