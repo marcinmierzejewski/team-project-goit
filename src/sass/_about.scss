@@ -1,14 +1,6 @@
 .section_about {
   background-color: $color-background-about;
-   background-image: url(../images/milk_background-desktop.png);
-  background-repeat: no-repeat; 
-  background-position: 90% 90%; 
 }
-
-.back{
- 
-}
-
 
 .about {
   &__paragraph {
@@ -145,6 +137,12 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .section_about {
+    background-image: url(/./images/milk_background-desktop.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 330px;
+  }
   .about {
     &__paragraph {
       padding-top: 4px;
@@ -164,6 +162,7 @@
 
     &__right-side {
       margin-left: 74px;
+      padding-top: 51px;
     }
 
     &__description-first {
@@ -190,9 +189,4 @@
   .modal-btn:hover {
     background-color: $hover;
   }
-}
-
-.img{
-  position: absolute;
-  
 }
