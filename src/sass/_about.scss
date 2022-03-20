@@ -81,6 +81,13 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
+  .section_about {
+    background-image: url(/./images/milk_background-mobile.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 690px;
+  }
+
   .about__description-secondary {
     width: 220px;
     height: 155px;
@@ -143,6 +150,7 @@
     background-position: center;
     background-position-y: 330px;
   }
+
   .about {
     &__paragraph {
       padding-top: 4px;
