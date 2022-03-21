@@ -39,12 +39,14 @@
 
       <div class="hero">
         <div class="hero__left">
-          <div class="hero-title">
+          <h1 class="hero-title">
             ice cream made with <span class="hero-title_accent">passion</span>
-          </div>
+          </h1>
           <div class="btn-wrapper">
-            <button class="hero-btn hero-btn_red" type="button">Products</button>
-            <button class="hero-btn hero-btn_white" type="button">How it’s made?</button>
+            <button class="hero-btn hero-btn_red" type="button">
+              <a class="hero-btn__link" href="#products">Products</a></button>
+            <button class="hero-btn hero-btn_white" type="button">
+              <a class="hero-btn__link" href="#about">How it’s made?</a></button>
           </div>
           <p class="hero__paragraf">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -84,7 +86,7 @@
         </div>
       </div>
 
-      <picture class="hero-img">
+      <picture class="hero__ice">
         <source
           media="(min-width: 1280px)"
           srcset="
@@ -106,7 +108,7 @@
         <img src="./images/hero-header/ice-mobile.png" alt="ice" />
       </picture>
 
-      <picture class="girl-img">
+      <picture class="hero__girl">
         <source
           media="(min-width: 1280px)"
           srcset="
@@ -126,7 +128,7 @@
         <img src="./images/hero-header/girl-tablet.png" alt="girl" />
       </picture>
 
-      <picture class="milk-img">
+      <picture class="hero__milk">
         <source
           media="(min-width: 1280px)"
           srcset="
