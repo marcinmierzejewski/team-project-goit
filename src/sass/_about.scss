@@ -85,12 +85,16 @@
     background-image: url(/./images/milk_background-mobile.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-position-y: 690px;
+    background-position-y: 736px;
   }
 
   .about__description-secondary {
     width: 220px;
     height: 155px;
+  }
+
+  .about__right-side{
+    padding-top: 46px;
   }
 }
 
@@ -108,11 +112,11 @@
 
     &__left-side-img {
       width: 340px;
-      height: 339px;
     }
 
     &__right-side {
       margin-left: 17px;
+      padding-top: 50px;
     }
 
     &__description-first {
