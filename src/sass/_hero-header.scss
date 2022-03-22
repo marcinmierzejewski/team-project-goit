@@ -55,6 +55,18 @@
   &__arrow  {
     display: none;
   }
+  
+  &__ice {
+    position: absolute;
+    bottom: 0;
+    right: 32px;
+    z-index: -1;
+  }
+
+  &__girl,
+  &__milk {
+    display: none;
+  }
 }
 
 .buy-btn {
@@ -120,16 +132,23 @@
   cursor: pointer;
   transition: background-color 250ms linear;
 
+  &__link {
+    text-decoration: none; 
+    color: inherit;
+  }
+
   &:first-child {
     margin-right: 8px;
   }
 
   &_red {
     background-color: $color-main;
+    color: #FFFFFF;
 
     &:hover,
     &:focus {
       background-color: #C7133E;
+      color: #FFFFFF;
     }
   }
 
@@ -140,20 +159,9 @@
     &:hover,
     &:focus {
       background-color: #ECEBEB;
+      color: #C7133E;
     }
   }
-}
-
-.hero-img {
-  position: absolute;
-  bottom: 0;
-  right: 32px;
-  z-index: -1;
-}
-
-.girl-img,
-.milk-img {
-  display: none;
 }
 
 .backdrop {
@@ -325,6 +333,24 @@
       bottom: -25px;
       left: 0;
     }
+    
+    &__ice {
+      right: 213px;
+    }
+
+    &__girl {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+
+    &__milk {
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: 28px;
+    }
   }
 
   .buy-btn {
@@ -354,24 +380,6 @@
     &__btns {
       padding-top: 38px;
     }
-  }
-
-  .hero-img {
-    right: 213px;
-  }
-
-  .girl-img {
-    display: block;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-  }
-
-  .milk-img {
-    display: block;
-    position: absolute;
-    left: 0;
-    bottom: 28px;
   }
 
   .btn-wrapper {
@@ -418,6 +426,20 @@
     &__arrow {
       bottom: -46px;
       left: 0;
+    }
+    
+    &__ice {
+      right: 450px;
+    }
+
+    &__girl {
+      bottom: 0;
+      right: 109px;
+    }
+
+    &__milk {
+      left: 77px;
+      bottom: 45px;
     }
   }
 
@@ -515,20 +537,6 @@
       font-size: 14px;
       line-height: 1.2875;
     }
-  }
-  
-  .hero-img {
-    right: 450px;
-  }
-
-  .girl-img {
-    bottom: 0;
-    right: 109px;
-  }
-
-  .milk-img {
-    left: 77px;
-    bottom: 45px;
   }
 }
 
